@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kallna | Portfolio</title>
+
+  <style>
+    :root {
+      --bg: #f8f7f4;
+      --text: #242424;
+      --muted: #74736f;
+      --accent: #008e65;
+      --line: #dedbd5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 28px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 0;
+    }
+
+    nav a { margin-left: 25px; }
+
+    .hero {
+      padding: 90px 0 55px;
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(56px, 9vw, 110px);
+      font-weight: 500;
+      letter-spacing: -.06em;
+      line-height: 1.05;
+      margin: 18px 0;
+    }
+
+    .intro {
+      font-size: 23px;
+      line-height: 1.5;
+      max-width: 700px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 35px;
+      margin: 35px 0 65px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .meta strong {
+      display: block;
+      color: var(--text);
+    }
+
+    .hero-image {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      background: #e7eee8;
+    }
+
+    section.content {
+      padding: 85px 0 10px;
+    }
+
+    .text-block {
+      max-width: 740px;
+    }
+
+    h2 {
+      font-size: clamp(30px, 4vw, 45px);
+      font-weight: 500;
+      letter-spacing: -.04em;
+      line-height: 1.2;
+      margin: 0 0 25px;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: -.02em;
+      margin: 45px 0 12px;
+    }
+
+    p {
+      font-size: 17px;
+      margin: 0 0 22px;
+    }
+
+    .muted { color: var(--muted); }
+
+    .insights {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin: 35px 0;
+    }
+
+    .insight {
+      padding: 25px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .insight h3 {
+      font-size: 20px;
+      margin: 0 0 12px;
+    }
+
+    .insight p {
+      font-size: 15px;
+      margin: 0;
+    }
+
+    figure {
+      margin: 40px 0 70px;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    figcaption {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .image-grid figure {
+      margin: 25px 0;
+    }
+
+    .feature {
+      padding: 30px 0;
+      border-top: 1px solid var(--line);
+      max-width: 740px;
+    }
+
+    .feature h3 { margin-top: 0; }
+
+    .reflection {
+      margin: 90px 0;
+      padding: 45px;
+      background: #e8efe9;
+      border-radius: 10px;
+    }
+
+    .reflection .text-block { max-width: 740px; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 35px 0;
+      color: var(--muted);
+    }
+
+    @media (max-width: 700px) {
+      .hero { padding-top: 55px; }
+      .intro { font-size: 19px; }
+      .insights, .image-grid {
+        grid-template-columns: 1fr;
+      }
+      .meta { gap: 18px; }
+      .reflection { padding: 25px; }
+      nav a { margin-left: 12px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <a href="index.html"><strong>Portfolio.</strong></a>
+      <nav>
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- INTRODUCTION -->
+      <section class="hero">
+        <div class="eyebrow">
+          Interaction Design · Master's Thesis · 2022
+        </div>
+
+        <h1>Kallna.</h1>
+
+        <p class="intro">
+          Making carbon reduction a little less overwhelming.
+        </p>
+
+        <p class="muted">
+          Exploring how challenges, friendly competition,
+          and thoughtful design could make climate action
+          more engaging and accessible.
+        </p>
+
+        <div class="meta">
+          <div><strong>Client</strong>Svalna AB</div>
+          <div><strong>Role</strong>UX Designer</div>
+          <div><strong>Duration</strong>5 months</div>
+          <div><strong>Year</strong>2022</div>
+        </div>
+      </section>
+
+      <!-- FINAL DESIGN HERO IMAGE -->
+      <figure>
+        <img
+          class="hero-image"
+          src="kalla-final.png"
+          alt="Five screens from the Kallna app concept">
+        <figcaption>
+          The final Kallna concept: emissions tracking,
+          leaderboards, challenges, and team progress.
+        </figcaption>
+      </figure>
+
+      <!-- CHALLENGE -->
+      <section class="content">
+        <div class="text-block">
+          <div class="eyebrow">01 / The Challenge</div>
+          <h2>Making climate action feel achievable.</h2>
+
+          <p>
+            Reducing your carbon footprint sounds
+            straightforward. Understanding what your
+            emissions mean — and knowing what to do
+            about them — is another story.
+          </p>
+
+          <p>
+            For my master's thesis, I collaborated with
+            Svalna AB to explore how their carbon
+            calculator could become more engaging
+            through challenges, friendly competition,
+            and opportunities to learn from others.
+          </p>
+
+          <p>
+            The challenge was to make climate action
+            feel motivating without making users
+            feel judged.
+          </p>
+        </div>
+      </section>
+
+      <!-- RESEARCH -->
+      <section class="content">
+        <div class="text-block">
+          <div class="eyebrow">02 / Research</div>
+          <h2>Understanding what motivates people.</h2>
+
+          <p>
+            We explored gamification, nudging, and
+            pro-environmental behaviour through
+            a literature review, benchmarking,
+            a questionnaire, and ten semi-structured
+            interviews with experts and people
+            experienced in climate-related competitions.
+          </p>
+        </div>
+
+        <div class="insights">
+          <div class="insight">
+            <h3>Competition isn't for everyone.</h3>
+            <p>
+              Public rankings could create discomfort
+              and discourage participation.
+            </p>
+          </div>
+
+          <div class="insight">
+            <h3>Learning from others matters.</h3>
+            <p>
+              Participants wanted inspiration and
+              practical ideas from other users.
+            </p>
+          </div>
+
+          <div class="insight">
+            <h3>Carbon data needs clarity.</h3>
+            <p>
+              Users needed more accessible ways to
+              understand their emissions and progress.
+            </p>
+          </div>
+        </div>
+
+        <figure>
+          <img
+            src="kallna-workshop.png"
+            alt="Collaborative workshop during the Kallna project">
+          <figcaption>
+            Exploring ideas and discussing possible
+            approaches during the design process.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- IDEATION -->
+      <section class="content">
+        <div class="text-block">
+          <div class="eyebrow">03 / Ideation</div>
+          <h2>Exploring ways to make it engaging.</h2>
+
+          <p>
+            We explored different ways to encourage
+            participation, from badges and quizzes
+            to social challenges and notifications.
+          </p>
+
+          <p>
+            Rather than focusing only on competition,
+            we wanted to create opportunities for
+            people to learn, participate, and feel
+            encouraged to take action.
+          </p>
+        </div>
+
+        <figure>
+          <img
+            src="kallna-sketch.png"
+            alt="Early hand-drawn ideas for gamification features">
+          <figcaption>
+            Early explorations of badges, quizzes,
+            notifications, and social features.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- WIREFRAMES -->
+      <section class="content">
+        <div class="text-block">
+          <div class="eyebrow">04 / Wireframing</div>
+          <h2>From ideas to interactions.</h2>
+
+          <p>
+            Through six design iterations, we explored
+            how users could compare progress, discover
+            challenges, and learn from one another.
+          </p>
+
+          <p>
+            Early wireframes helped us examine both
+            the structure of the experience and the
+            details of individual interactions.
+          </p>
+        </div>
+
+        <div class="image-grid">
+          <figure>
+            <img
+              src="kallna-leaderboard-wireframes.png"
+              alt="Early leaderboard wireframes">
+            <figcaption>
+              Exploring rankings and ways to discover
+              what other participants were doing.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="kallna-challenges-wireframes.png"
+              alt="Early challenge selection wireframes">
+            <figcaption>
+              Exploring how users could browse challenges
+              and invite others to participate.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- DESIGN DECISIONS -->
+      <section class="content">
+        <div class="text-block">
+          <div class="eyebrow">05 / Design Decisions</div>
+          <h2>Motivation without judgment.</h2>
+        </div>
+
+        <div class="feature">
+          <h3>01. A more thoughtful leaderboard</h3>
+          <p>
+            An early concept ranked all participants
+            publicly. Research suggested this could
+            discourage participation.
+          </p>
+          <p>
+            We simplified the leaderboard to highlight
+            the top three participants while allowing
+            users to check their own ranking privately.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>02. Challenges as opportunities to learn</h3>
+          <p>
+            Challenges gave users concrete activities
+            to try. Exploring challenges completed
+            by others could also provide inspiration
+            for their own actions.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>03. Making emissions understandable</h3>
+          <p>
+            Visual progress indicators and categories
+            such as Food, Transport, Household,
+            and Shopping helped break down complex
+            emissions data into something more
+            approachable.
+          </p>
+        </div>
+      </section>
+
+      <!-- TESTING -->
+      <section class="content">
+        <div class="text-block">
+          <div class="eyebrow">06 / Testing</div>
+          <h2>Testing, learning, refining.</h2>
+
+          <p>
+            We conducted formative think-aloud testing
+            with low- and high-fidelity prototypes
+            throughout the design process.
+          </p>
+
+          <p>
+            Feedback reinforced the importance of
+            simplifying carbon data, reducing the
+            pressure of public comparisons, and
+            helping users learn from other participants.
+          </p>
+        </div>
+      </section>
+
+      <!-- OUTCOME -->
+      <section class="content">
+        <div class="text-block">
+          <div class="eyebrow">07 / Outcome</div>
+          <h2>Meet Kallna.</h2>
+
+          <p>
+            Kallna — Swedish for "cool down" —
+            brought together five main areas:
+            Home, Team, Me, Leaderboard, and Challenges.
+          </p>
+
+          <p>
+            Together, these features aimed to make
+            an abstract environmental issue feel
+            more understandable, social, and actionable.
+          </p>
+        </div>
+
+        <figure>
+          <img
+            src="kalla-final.png"
+            alt="Final Kallna interface designs">
+          <figcaption>
+            Final high-fidelity screens from
+            the Kallna concept.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- REFLECTION -->
+      <section class="reflection">
+        <div class="text-block">
+          <div class="eyebrow">08 / Reflection</div>
+          <h2>What I took away.</h2>
+
+          <p>
+            One of the most interesting lessons from
+            this project was that competition doesn't
+            automatically make an experience more
+            motivating.
+          </p>
+
+          <p>
+            How people feel about being compared matters
+            just as much as the competition itself.
+            Kallna challenged us to balance engagement
+            with sensitivity and make complex
+            environmental data easier to understand.
+          </p>
+
+          <p>
+            While usability testing helped us refine
+            the concept, we didn't investigate whether
+            it would sustain engagement or reduce
+            emissions over time. That would be an
+            important next step.
+          </p>
+        </div>
+      </section>
+
+      <p>
+        <a href="index.html#work">
+          ← Back to selected work
+        </a>
+      </p>
+
+    </main>
+
+    <footer>
+      © 2026 · Portfolio
+    </footer>
+
+  </div>
+</body>
+</html>
