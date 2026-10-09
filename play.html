@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play — Kassandra Bley</title>
+
+  <style>
+    :root {
+      --bg: #f8f7f4;
+      --text: #242424;
+      --muted: #74736f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 28px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    nav a {
+      margin-left: 25px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 100px 0 75px;
+      max-width: 740px;
+    }
+
+    h1 {
+      font-size: clamp(60px, 9vw, 110px);
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.06em;
+      margin: 0 0 28px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: var(--muted);
+      max-width: 590px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-bottom: 110px;
+    }
+
+    .artwork {
+      background: #e9e6df;
+      aspect-ratio: 4 / 3;
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+    }
+
+    .artwork img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    footer {
+      border-top: 1px solid #ddd;
+      padding: 35px 0;
+      color: var(--muted);
+    }
+
+    @media (max-width: 650px) {
+      .hero { padding: 75px 0 55px; }
+      .gallery { grid-template-columns: 1fr; }
+      nav a { margin-left: 12px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <a href="index.html">Kassandra Bley</a>
+      <nav>
+        <a href="index.html#work">Work</a>
+        <a href="play.html">Play</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Play.</h1>
+      <p>Not everything needs a brief.</p>
+      <p>
+        A collection of things I make, notice, and
+        experiment with — mostly photography,
+        painting, and whatever catches my attention.
+      </p>
+    </section>
+
+    <section class="gallery">
+      <div class="artwork">Your photo</div>
+      <div class="artwork">Your painting</div>
+      <div class="artwork">Your photo</div>
+      <div class="artwork">Your artwork</div>
+    </section>
+
+    <footer>
+      © Kassandra Bley
+    </footer>
+
+  </div>
+</body>
+</html>
